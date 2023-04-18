@@ -2,9 +2,9 @@ import random
 import time
 from telethon import TelegramClient, events, sync
 
-api_id = 'YOUR_API_ID'
-api_hash = 'YOUR_API_HASH'
-session_name = 'YOUR_SESSION_NAME'
+api_id = '24639866'
+api_hash = 'd04ab3fca3e8b8bd2477d8dd1b3e2c97'
+session_name = '1BVtsOKIBu33NMAEByUeZKkTgwpQrr-yJLyW9NMfy_P_RLolsVRz--m1xAFVM1impc3goUOrcBchlhhwn2zn0cnw2KgGX5RzkCU0twZIXuy9u8vWSftcFoWBrhl8pBXDunK3KJqY0DNurMwkzdDnPss0_ghoNn2alagCPqtSbBW84eWxb-8fMndvJxMtS8hnWZCwW5jyoK6NTb_yMLOlVbCUWxYXsVnHbVdP9aze-auMJut89Lv6_f9S_1lLNt5Z4ivWZ2YrDgdtxXWtBO_isjyNocLjxoLBKZNh4FDsHBj6KaPGJ2H-ZiSwe7ix14--kpw_ySczpkYNM2xBCg9YExIuX84Yrk5c='
 
 client = TelegramClient(session_name, api_id, api_hash)
 
