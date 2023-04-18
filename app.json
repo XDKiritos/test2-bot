@@ -1,0 +1,42 @@
+{
+  "name": "telegram-user-bot",
+  "description": "A Telegram user bot that sends messages, replies to personal chats, and changes profile picture and username automatically.",
+  "repository": "https://github.com/XDKiritos/test2-bot",
+  "keywords": ["telegram", "bot", "user", "python", "telethon"],
+  "env": {
+    "API_ID": {
+      "description": "The API ID provided by Telegram.",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "The API hash provided by Telegram.",
+      "required": true
+    },
+    "SESSION_NAME": {
+      "description": "The name of the session for the Telethon library.",
+      "required": true
+    }
+  },
+  "addons": [
+    {
+      "plan": "heroku-postgresql",
+      "options": {
+        "version": "12"
+      }
+    }
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ],
+  "scripts": {
+    "start": "python bot.py"
+  },
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  }
+}
