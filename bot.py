@@ -9,18 +9,18 @@ session_name = 'YOUR_SESSION_NAME'
 client = TelegramClient(session_name, api_id, api_hash)
 
 # define the message list and the period of time for sending messages
-message_list = ['Hi there!', 'How are you?', 'Have a nice day!']
-time_interval = 60  # in seconds
+message_list = ['Vc available now', 'Hello boys msg me', 'Hlo \n\n\n\nService \n\n\n\nAvailable \n\n\n\nMsg']
+time_interval = 20  # in seconds
 
 # define the personal chat reply message
-personal_reply_message = 'Thank you for your message. I will get back to you soon!'
+personal_reply_message = 'Join Here For Free Show 💫 \nhttps://t.me/+_PRSijG6OYczNzBl \nhttps://t.me/+_PRSijG6OYczNzBl'
 
 # define the profile picture list and the period of time for changing profile picture
-picture_list = ['picture1.jpg', 'picture2.jpg', 'picture3.jpg']
-picture_interval = 3600  # in seconds
+picture_list = ['https://telegra.ph/file/69967a21c3ed64568d2ff.jpg', 'https://telegra.ph/file/5854d74e7e74213151140.jpg', 'https://telegra.ph/file/0c3c9cb1028a50724968a.jpg']
+picture_interval = 20  # in seconds
 
 # define the username list and the period of time for changing the username
-username_list = ['new_username_1', 'new_username_2', 'new_username_3']
+username_list = ['PaidGirlpihu', 'PaidGirlpihu2', 'PaidGirlpihu3']
 username_interval = 7200  # in seconds
 
 # define the event handler for incoming personal chats
@@ -36,7 +36,7 @@ async def send_messages():
         # get a random message from the message list
         message = random.choice(message_list)
         # send the message to the group
-        await client.send_message('GROUP_USERNAME', message)
+        await client.send_message('@Girls_Chatting_Group_And_Boys', message)
         # wait for the specified time interval
         time.sleep(time_interval)
 
