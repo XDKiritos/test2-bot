@@ -60,6 +60,17 @@ async def change_username():
         # wait for the specified time interval
         time.sleep(username_interval)
 
+import sqlite3
+
+conn = sqlite3.connect('DATABASE_URL')
+
+# example function to insert data into a table
+def insert_data(table, data):
+    cursor = conn.cursor()
+    query = f"INSERT INTO {table} VALUES (?, ?, ?)"
+    cursor.execute(query, data)
+    conn.commit()
+
 # start the client and run the functions in separate threads
 with client:
     client.loop.run_until_complete(asyncio.gather(
